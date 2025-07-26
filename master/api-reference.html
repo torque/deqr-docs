@@ -1,17 +1,17 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" lang="en" data-content_root="./">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Development Tips and Tricks" href="development.html" /><link rel="prev" title="Decoders" href="decoders.html" />
 
-    <meta name="generator" content="sphinx-4.5.0, furo 2022.09.29"/>
+    <!-- Generated with Sphinx 7.4.7 and Furo 2024.04.27 -->
         <title>API Reference - deqr</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=d81277517bee4d6b0349d71bb2661d4890b5617c" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=437aa6ec" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
     
     
 
@@ -114,6 +114,8 @@
   <div class="visually-hidden">Hide table of contents sidebar</div>
 </label>
 
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
 
 
 <div class="page">
@@ -151,7 +153,7 @@
   <span class="sidebar-brand-text">deqr</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
-  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
@@ -197,16 +199,16 @@
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
-        <article role="main">
+        <article role="main" id="furo-main-content">
           <section id="module-deqr">
-<span id="api-reference"></span><h1>API Reference<a class="headerlink" href="#module-deqr" title="Permalink to this headline">#</a></h1>
+<span id="api-reference"></span><h1>API Reference<a class="headerlink" href="#module-deqr" title="Link to this heading">¶</a></h1>
 <section id="decoders">
-<h2>Decoders<a class="headerlink" href="#decoders" title="Permalink to this headline">#</a></h2>
+<h2>Decoders<a class="headerlink" href="#decoders" title="Link to this heading">¶</a></h2>
 <section id="qrdecdecoder">
-<h3>QRdecDecoder<a class="headerlink" href="#qrdecdecoder" title="Permalink to this headline">#</a></h3>
+<h3>QRdecDecoder<a class="headerlink" href="#qrdecdecoder" title="Link to this heading">¶</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="deqr.QRdecDecoder">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deqr.</span></span><span class="sig-name descname"><span class="pre">QRdecDecoder</span></span><a class="headerlink" href="#deqr.QRdecDecoder" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deqr.</span></span><span class="sig-name descname"><span class="pre">QRdecDecoder</span></span><a class="headerlink" href="#deqr.QRdecDecoder" title="Link to this definition">¶</a></dt>
 <dd><p>QR code decoder using the QRdec backend.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -217,13 +219,13 @@ binarization or the inversion is disabled, images will not be decoded
 properly without preprocessing.</p>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Raises</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#MemoryError" title="(in Python v3.12)"><strong>MemoryError</strong></a> – if the QR code reader context allocation fails.</p>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#MemoryError" title="(in Python v3.13)"><strong>MemoryError</strong></a> – if the QR code reader context allocation fails.</p>
 </dd>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="deqr.QRdecDecoder.decode">
-<span class="sig-name descname"><span class="pre">decode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">binarize:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">binarize_invert:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">convert_data:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unicode</span> <span class="pre">byte_charset:</span> <span class="pre">Optional[str]</span> <span class="pre">=</span> <span class="pre">u'utf-8'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#deqr.datatypes.QRCode" title="deqr.datatypes.QRCode"><span class="pre">datatypes.QRCode</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#deqr.QRdecDecoder.decode" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">decode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">binarize:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">binarize_invert:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">convert_data:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">str</span> <span class="pre">byte_charset:</span> <span class="pre">Optional[str]</span> <span class="pre">=</span> <span class="pre">'utf-8'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#deqr.datatypes.QRCode" title="deqr.datatypes.QRCode"><span class="pre">datatypes.QRCode</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#deqr.QRdecDecoder.decode" title="Link to this definition">¶</a></dt>
 <dd><p>Decode all detectable QR codes in an image.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -236,7 +238,7 @@ reused, it will be re-inverted and not decode correctly the second
 time.</p>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>image_data</strong> – A python object containing the pixel data of the image to search for
 QR codes. This can be any format supported
@@ -249,16 +251,16 @@ become white and light pixels become black).</p></li>
 <li><p><strong>convert_data</strong> – <p>If <code class="docutils literal notranslate"><span class="pre">True</span></code>, all data entry payloads are  decoded into
 “native” python types:</p>
 <ul>
-<li><p><a class="reference internal" href="#deqr.datatypes.QRDataType.NUMERIC" title="deqr.datatypes.QRDataType.NUMERIC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datatypes.QRDataType.NUMERIC</span></code></a> =&gt; <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>,</p></li>
+<li><p><a class="reference internal" href="#deqr.datatypes.QRDataType.NUMERIC" title="deqr.datatypes.QRDataType.NUMERIC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datatypes.QRDataType.NUMERIC</span></code></a> =&gt; <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>,</p></li>
 <li><p><a class="reference internal" href="#deqr.datatypes.QRDataType.ALPHANUMERIC" title="deqr.datatypes.QRDataType.ALPHANUMERIC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datatypes.QRDataType.ALPHANUMERIC</span></code></a> =&gt;
-<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> as <code class="docutils literal notranslate"><span class="pre">ascii</span></code></p></li>
+<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> as <code class="docutils literal notranslate"><span class="pre">ascii</span></code></p></li>
 <li><p><a class="reference internal" href="#deqr.datatypes.QRDataType.KANJI" title="deqr.datatypes.QRDataType.KANJI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datatypes.QRDataType.KANJI</span></code></a> =&gt;
-<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> as <code class="docutils literal notranslate"><span class="pre">shift-jis</span></code></p></li>
+<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> as <code class="docutils literal notranslate"><span class="pre">shift-jis</span></code></p></li>
 <li><p><a class="reference internal" href="#deqr.datatypes.QRDataType.BYTE" title="deqr.datatypes.QRDataType.BYTE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datatypes.QRDataType.BYTE</span></code></a> =&gt;
-<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> using the <code class="docutils literal notranslate"><span class="pre">byte_charset</span></code> parameter</p></li>
+<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> using the <code class="docutils literal notranslate"><span class="pre">byte_charset</span></code> parameter</p></li>
 </ul>
 <p>If <code class="docutils literal notranslate"><span class="pre">False</span></code>, no conversion will be done and all data entry data
-will be returned as <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a>.</p>
+will be returned as <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a>.</p>
 </p></li>
 <li><p><strong>byte_charset</strong> – The charset to use for converting all decoded data entries of type
 <a class="reference internal" href="#deqr.datatypes.QRDataType.BYTE" title="deqr.datatypes.QRDataType.BYTE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datatypes.QRDataType.BYTE</span></code></a> found in the image. If
@@ -267,14 +269,14 @@ will be returned as <a class="reference external" href="https://docs.python.org/
 even if <code class="docutils literal notranslate"><span class="pre">convert_data</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>A list of objects containing information from the decoded QR
 codes.</p>
 </dd>
-<dt class="field-odd">Raises</dt>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.12)"><strong>TypeError</strong></a> – if <code class="docutils literal notranslate"><span class="pre">image_data</span></code> is of an unsupported type.</p></li>
-<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.12)"><strong>ValueError</strong></a> – if <code class="docutils literal notranslate"><span class="pre">image_data</span></code> is malformed somehow.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.13)"><strong>TypeError</strong></a> – if <code class="docutils literal notranslate"><span class="pre">image_data</span></code> is of an unsupported type.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.13)"><strong>ValueError</strong></a> – if <code class="docutils literal notranslate"><span class="pre">image_data</span></code> is malformed somehow.</p></li>
 </ul>
 </dd>
 </dl>
@@ -284,19 +286,19 @@ codes.</p>
 
 </section>
 <section id="quircdecoder">
-<h3>QuircDecoder<a class="headerlink" href="#quircdecoder" title="Permalink to this headline">#</a></h3>
+<h3>QuircDecoder<a class="headerlink" href="#quircdecoder" title="Link to this heading">¶</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="deqr.QuircDecoder">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deqr.</span></span><span class="sig-name descname"><span class="pre">QuircDecoder</span></span><a class="headerlink" href="#deqr.QuircDecoder" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deqr.</span></span><span class="sig-name descname"><span class="pre">QuircDecoder</span></span><a class="headerlink" href="#deqr.QuircDecoder" title="Link to this definition">¶</a></dt>
 <dd><p>QR code decoder using the Quirc backend.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Raises</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#MemoryError" title="(in Python v3.12)"><strong>MemoryError</strong></a> – if the QR code reader context allocation fails.</p>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#MemoryError" title="(in Python v3.13)"><strong>MemoryError</strong></a> – if the QR code reader context allocation fails.</p>
 </dd>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="deqr.QuircDecoder.decode">
-<span class="sig-name descname"><span class="pre">decode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">binarize:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">binarize_invert:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">convert_data:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unicode</span> <span class="pre">byte_charset:</span> <span class="pre">Optional[str]</span> <span class="pre">=</span> <span class="pre">u'utf-8'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deqr.QuircDecoder.decode" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">decode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">binarize:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">binarize_invert:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">convert_data:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">str</span> <span class="pre">byte_charset:</span> <span class="pre">Optional[str]</span> <span class="pre">=</span> <span class="pre">'utf-8'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deqr.QuircDecoder.decode" title="Link to this definition">¶</a></dt>
 <dd><p>Decode all detectable QR codes in an image.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -309,7 +311,7 @@ reused, it will be re-inverted and not decode correctly the second
 time.</p>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>image_data</strong> – A python object containing the pixel data of the image to search for
 QR codes. This can be any format supported
@@ -322,16 +324,16 @@ become white and light pixels become black).</p></li>
 <li><p><strong>convert_data</strong> – <p>If <code class="docutils literal notranslate"><span class="pre">True</span></code>, all data entry payloads are  decoded into
 “native” python types:</p>
 <ul>
-<li><p><a class="reference internal" href="#deqr.datatypes.QRDataType.NUMERIC" title="deqr.datatypes.QRDataType.NUMERIC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deqr.datatypes.QRDataType.NUMERIC</span></code></a> =&gt; <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>,</p></li>
+<li><p><a class="reference internal" href="#deqr.datatypes.QRDataType.NUMERIC" title="deqr.datatypes.QRDataType.NUMERIC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deqr.datatypes.QRDataType.NUMERIC</span></code></a> =&gt; <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>,</p></li>
 <li><p><a class="reference internal" href="#deqr.datatypes.QRDataType.ALPHANUMERIC" title="deqr.datatypes.QRDataType.ALPHANUMERIC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deqr.datatypes.QRDataType.ALPHANUMERIC</span></code></a> =&gt;
-<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> as <code class="docutils literal notranslate"><span class="pre">ascii</span></code></p></li>
+<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> as <code class="docutils literal notranslate"><span class="pre">ascii</span></code></p></li>
 <li><p><a class="reference internal" href="#deqr.datatypes.QRDataType.KANJI" title="deqr.datatypes.QRDataType.KANJI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deqr.datatypes.QRDataType.KANJI</span></code></a> =&gt;
-<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> as <code class="docutils literal notranslate"><span class="pre">shift-jis</span></code></p></li>
+<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> as <code class="docutils literal notranslate"><span class="pre">shift-jis</span></code></p></li>
 <li><p><a class="reference internal" href="#deqr.datatypes.QRDataType.BYTE" title="deqr.datatypes.QRDataType.BYTE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deqr.datatypes.QRDataType.BYTE</span></code></a> =&gt;
-<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> using the <code class="docutils literal notranslate"><span class="pre">byte_charset</span></code> parameter</p></li>
+<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> using the <code class="docutils literal notranslate"><span class="pre">byte_charset</span></code> parameter</p></li>
 </ul>
 <p>If <code class="docutils literal notranslate"><span class="pre">False</span></code>, no conversion will be done and all data entry data
-will be returned as <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a>.</p>
+will be returned as <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a>.</p>
 </p></li>
 <li><p><strong>byte_charset</strong> – The charset to use for converting all decoded data entries of type
 <a class="reference internal" href="#deqr.datatypes.QRDataType.BYTE" title="deqr.datatypes.QRDataType.BYTE"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deqr.datatypes.QRDataType.BYTE</span></code></a> found in the image. If <code class="docutils literal notranslate"><span class="pre">None</span></code>,
@@ -339,15 +341,15 @@ then data entries of type <a class="reference internal" href="#deqr.datatypes.QR
 converted, even if <code class="docutils literal notranslate"><span class="pre">convert_data</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>A list of objects containing information from the decoded QR
 codes.</p>
 </dd>
-<dt class="field-odd">Raises</dt>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#MemoryError" title="(in Python v3.12)"><strong>MemoryError</strong></a> – if the decoder image buffer allocation fails.</p></li>
-<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.12)"><strong>TypeError</strong></a> – if <code class="docutils literal notranslate"><span class="pre">image_data</span></code> is of an unsupported type.</p></li>
-<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.12)"><strong>ValueError</strong></a> – if <code class="docutils literal notranslate"><span class="pre">image_data</span></code> is malformed somehow.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#MemoryError" title="(in Python v3.13)"><strong>MemoryError</strong></a> – if the decoder image buffer allocation fails.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.13)"><strong>TypeError</strong></a> – if <code class="docutils literal notranslate"><span class="pre">image_data</span></code> is of an unsupported type.</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.13)"><strong>ValueError</strong></a> – if <code class="docutils literal notranslate"><span class="pre">image_data</span></code> is malformed somehow.</p></li>
 </ul>
 </dd>
 </dl>
@@ -358,39 +360,39 @@ codes.</p>
 </section>
 </section>
 <section id="data-types">
-<h2>Data Types<a class="headerlink" href="#data-types" title="Permalink to this headline">#</a></h2>
+<h2>Data Types<a class="headerlink" href="#data-types" title="Link to this heading">¶</a></h2>
 <p>These data types are structured collections of data produced by the decoders
 upon successfully decoding QR codes.</p>
 <section id="qrcode">
-<h3>QRCode<a class="headerlink" href="#qrcode" title="Permalink to this headline">#</a></h3>
+<h3>QRCode<a class="headerlink" href="#qrcode" title="Link to this heading">¶</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="deqr.datatypes.QRCode">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deqr.datatypes.</span></span><span class="sig-name descname"><span class="pre">QRCode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">version</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ecc_level</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_entries</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">corners</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">center</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deqr.datatypes.QRCode" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deqr.datatypes.</span></span><span class="sig-name descname"><span class="pre">QRCode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">version</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ecc_level</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_entries</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">corners</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">center</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deqr.datatypes.QRCode" title="Link to this definition">¶</a></dt>
 <dd><p>A structured collection of information about a QR code that has been decoded.</p>
 <p>This class cannot usefully be instantiated by the user, but instances of it
 are created by <a class="reference internal" href="#deqr.QRdecDecoder.decode" title="deqr.QRdecDecoder.decode"><code class="xref py py-meth docutils literal notranslate"><span class="pre">deqr.QRdecDecoder.decode()</span></code></a>
 or <a class="reference internal" href="#deqr.QuircDecoder.decode" title="deqr.QuircDecoder.decode"><code class="xref py py-meth docutils literal notranslate"><span class="pre">deqr.QuircDecoder.decode()</span></code></a>.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="deqr.datatypes.QRCode.version">
-<span class="sig-name descname"><span class="pre">version</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></em><a class="headerlink" href="#deqr.datatypes.QRCode.version" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">version</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></em><a class="headerlink" href="#deqr.datatypes.QRCode.version" title="Link to this definition">¶</a></dt>
 <dd><p>The QR code version, which determines its size and data storage capacity.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="deqr.datatypes.QRCode.ecc_level">
-<span class="sig-name descname"><span class="pre">ecc_level</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#deqr.datatypes.QREccLevel" title="deqr.datatypes.QREccLevel"><span class="pre">QREccLevel</span></a></em><a class="headerlink" href="#deqr.datatypes.QRCode.ecc_level" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">ecc_level</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#deqr.datatypes.QREccLevel" title="deqr.datatypes.QREccLevel"><span class="pre">QREccLevel</span></a></em><a class="headerlink" href="#deqr.datatypes.QRCode.ecc_level" title="Link to this definition">¶</a></dt>
 <dd><p>The error correction code level of this QR code.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="deqr.datatypes.QRCode.mask">
-<span class="sig-name descname"><span class="pre">mask</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></em><a class="headerlink" href="#deqr.datatypes.QRCode.mask" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">mask</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></em><a class="headerlink" href="#deqr.datatypes.QRCode.mask" title="Link to this definition">¶</a></dt>
 <dd><p>The data masking pattern used on the code.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="deqr.datatypes.QRCode.data_entries">
-<span class="sig-name descname"><span class="pre">data_entries</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.12)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#deqr.datatypes.QRCodeData" title="deqr.datatypes.QRCodeData"><span class="pre">QRCodeData</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#deqr.datatypes.QRCode.data_entries" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">data_entries</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#deqr.datatypes.QRCodeData" title="deqr.datatypes.QRCodeData"><span class="pre">QRCodeData</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#deqr.datatypes.QRCode.data_entries" title="Link to this definition">¶</a></dt>
 <dd><p>The data segments contained in this QR code.</p>
 <p>deqr currently only produces data entries from segments that contain
 data, i.e. entries stored as <a class="reference internal" href="#deqr.datatypes.QRDataType.NUMERIC" title="deqr.datatypes.QRDataType.NUMERIC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">QRDataType.NUMERIC</span></code></a>,
@@ -400,7 +402,7 @@ data, i.e. entries stored as <a class="reference internal" href="#deqr.datatypes
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="deqr.datatypes.QRCode.corners">
-<span class="sig-name descname"><span class="pre">corners</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.12)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.12)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#deqr.datatypes.QRCode.corners" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">corners</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#deqr.datatypes.QRCode.corners" title="Link to this definition">¶</a></dt>
 <dd><p>A sequence of pixel coordinates of the four corners of the QR code
 relative to the top-left of the image.</p>
 <p>These coordinates always start with the corner containing the top-left
@@ -412,7 +414,7 @@ code’s position within the image.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="deqr.datatypes.QRCode.center">
-<span class="sig-name descname"><span class="pre">center</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.12)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#deqr.datatypes.QRCode.center" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">center</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#deqr.datatypes.QRCode.center" title="Link to this definition">¶</a></dt>
 <dd><p>The pixel coordinates of the geometric center of the QR code, relative to
 the top-left of the image. Coordinates are ordered <code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span></code>, i.e.
 <code class="docutils literal notranslate"><span class="pre">(horizontal,</span> <span class="pre">vertical)</span></code>.</p>
@@ -422,14 +424,14 @@ the top-left of the image. Coordinates are ordered <code class="docutils literal
 
 </section>
 <section id="qrcodedata">
-<h3>QRCodeData<a class="headerlink" href="#qrcodedata" title="Permalink to this headline">#</a></h3>
+<h3>QRCodeData<a class="headerlink" href="#qrcodedata" title="Link to this heading">¶</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="deqr.datatypes.QRCodeData">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deqr.datatypes.</span></span><span class="sig-name descname"><span class="pre">QRCodeData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deqr.datatypes.QRCodeData" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deqr.datatypes.</span></span><span class="sig-name descname"><span class="pre">QRCodeData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deqr.datatypes.QRCodeData" title="Link to this definition">¶</a></dt>
 <dd><p>A data segment read from the QR code.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="deqr.datatypes.QRCodeData.type">
-<span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#deqr.datatypes.QRDataType" title="deqr.datatypes.QRDataType"><span class="pre">deqr.datatypes.QRDataType</span></a></em><a class="headerlink" href="#deqr.datatypes.QRCodeData.type" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#deqr.datatypes.QRDataType" title="deqr.datatypes.QRDataType"><span class="pre">QRDataType</span></a></em><a class="headerlink" href="#deqr.datatypes.QRCodeData.type" title="Link to this definition">¶</a></dt>
 <dd><p>the type of QR code data, which also represents its storage format in the
 code, for types that contain data.</p>
 <p>The QR code decoder backend is responsible for decoding the data into a
@@ -440,7 +442,7 @@ See <a class="reference internal" href="#deqr.QRdecDecoder.decode" title="deqr.Q
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="deqr.datatypes.QRCodeData.data">
-<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.12)"><span class="pre">bytes</span></a></em><a class="headerlink" href="#deqr.datatypes.QRCodeData.data" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.13)"><span class="pre">bytes</span></a></em><a class="headerlink" href="#deqr.datatypes.QRCodeData.data" title="Link to this definition">¶</a></dt>
 <dd><p>The binary data contained in the segment.</p>
 </dd></dl>
 
@@ -448,11 +450,11 @@ See <a class="reference internal" href="#deqr.QRdecDecoder.decode" title="deqr.Q
 
 </section>
 <section id="qrdatatype">
-<h3>QRDataType<a class="headerlink" href="#qrdatatype" title="Permalink to this headline">#</a></h3>
+<h3>QRDataType<a class="headerlink" href="#qrdatatype" title="Link to this heading">¶</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="deqr.datatypes.QRDataType">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deqr.datatypes.</span></span><span class="sig-name descname"><span class="pre">QRDataType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">module</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qualname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deqr.datatypes.QRDataType" title="Permalink to this definition">#</a></dt>
-<dd><p>An <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.IntEnum" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntEnum</span></code></a> representing the data storage format of a given
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deqr.datatypes.</span></span><span class="sig-name descname"><span class="pre">QRDataType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">module</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qualname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deqr.datatypes.QRDataType" title="Link to this definition">¶</a></dt>
+<dd><p>An <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.IntEnum" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntEnum</span></code></a> representing the data storage format of a given
 data section.</p>
 <p>QR codes can encode multiple different types of data with varying levels of
 efficiency. An individual QR code can also contain multiple different data
@@ -460,25 +462,25 @@ sections, each with their own storage format.</p>
 <p>See <a class="reference external" href="https://en.wikipedia.org/wiki/QR_code#Encoding">Wikipedia</a> for more information.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="deqr.datatypes.QRDataType.NUMERIC">
-<span class="sig-name descname"><span class="pre">NUMERIC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#deqr.datatypes.QRDataType.NUMERIC" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">NUMERIC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#deqr.datatypes.QRDataType.NUMERIC" title="Link to this definition">¶</a></dt>
 <dd><p>The data was stored as numeric (characters [0-9])</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="deqr.datatypes.QRDataType.ALPHANUMERIC">
-<span class="sig-name descname"><span class="pre">ALPHANUMERIC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#deqr.datatypes.QRDataType.ALPHANUMERIC" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">ALPHANUMERIC</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#deqr.datatypes.QRDataType.ALPHANUMERIC" title="Link to this definition">¶</a></dt>
 <dd><p>The data was stored as alphanumeric ([0-9A-Z] and some)</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="deqr.datatypes.QRDataType.BYTE">
-<span class="sig-name descname"><span class="pre">BYTE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#deqr.datatypes.QRDataType.BYTE" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">BYTE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#deqr.datatypes.QRDataType.BYTE" title="Link to this definition">¶</a></dt>
 <dd><p>The data was stored as 8-bit bytes (normally a UTF-8 string)</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="deqr.datatypes.QRDataType.KANJI">
-<span class="sig-name descname"><span class="pre">KANJI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8</span></em><a class="headerlink" href="#deqr.datatypes.QRDataType.KANJI" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">KANJI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8</span></em><a class="headerlink" href="#deqr.datatypes.QRDataType.KANJI" title="Link to this definition">¶</a></dt>
 <dd><p>the data was stored as 13-bit kanji (Shift-JIS encoded)</p>
 </dd></dl>
 
@@ -486,11 +488,11 @@ sections, each with their own storage format.</p>
 
 </section>
 <section id="qrecclevel">
-<h3>QREccLevel<a class="headerlink" href="#qrecclevel" title="Permalink to this headline">#</a></h3>
+<h3>QREccLevel<a class="headerlink" href="#qrecclevel" title="Link to this heading">¶</a></h3>
 <dl class="py class">
 <dt class="sig sig-object py" id="deqr.datatypes.QREccLevel">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deqr.datatypes.</span></span><span class="sig-name descname"><span class="pre">QREccLevel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">module</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qualname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deqr.datatypes.QREccLevel" title="Permalink to this definition">#</a></dt>
-<dd><p>An <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.IntEnum" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntEnum</span></code></a> representing the QR code’s error correction
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deqr.datatypes.</span></span><span class="sig-name descname"><span class="pre">QREccLevel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">module</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qualname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deqr.datatypes.QREccLevel" title="Link to this definition">¶</a></dt>
+<dd><p>An <a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.IntEnum" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">enum.IntEnum</span></code></a> representing the QR code’s error correction
 code (ECC) level.</p>
 <p>This value represents how much error correction data the QR code contains,
 which directly maps to how much of the code can be missing or occluded
@@ -503,25 +505,25 @@ ECC data.</p>
 <p>See <a class="reference external" href="https://en.wikipedia.org/wiki/QR_code#Error_correction">Wikipedia</a> for more information</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="deqr.datatypes.QREccLevel.M">
-<span class="sig-name descname"><span class="pre">M</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#deqr.datatypes.QREccLevel.M" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">M</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#deqr.datatypes.QREccLevel.M" title="Link to this definition">¶</a></dt>
 <dd><p>The code can successfully decode with 15% of codewords missing.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="deqr.datatypes.QREccLevel.L">
-<span class="sig-name descname"><span class="pre">L</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#deqr.datatypes.QREccLevel.L" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">L</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#deqr.datatypes.QREccLevel.L" title="Link to this definition">¶</a></dt>
 <dd><p>The code can successfully decode with 7% of codewords missing.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="deqr.datatypes.QREccLevel.H">
-<span class="sig-name descname"><span class="pre">H</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#deqr.datatypes.QREccLevel.H" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">H</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#deqr.datatypes.QREccLevel.H" title="Link to this definition">¶</a></dt>
 <dd><p>The code can successfully decode with 30% of codewords missing.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="deqr.datatypes.QREccLevel.Q">
-<span class="sig-name descname"><span class="pre">Q</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#deqr.datatypes.QREccLevel.Q" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">Q</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#deqr.datatypes.QREccLevel.Q" title="Link to this definition">¶</a></dt>
 <dd><p>The code can successfully decode with 25% of codewords missing.</p>
 </dd></dl>
 
@@ -530,19 +532,19 @@ ECC data.</p>
 </section>
 </section>
 <section id="module-deqr.image">
-<span id="image-loader"></span><h2>Image Loader<a class="headerlink" href="#module-deqr.image" title="Permalink to this headline">#</a></h2>
+<span id="image-loader"></span><h2>Image Loader<a class="headerlink" href="#module-deqr.image" title="Link to this heading">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="deqr.image.ImageLoader">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deqr.image.</span></span><span class="sig-name descname"><span class="pre">ImageLoader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.12)"><span class="pre">Any</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deqr.image.ImageLoader" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deqr.image.</span></span><span class="sig-name descname"><span class="pre">ImageLoader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.13)"><span class="pre">Any</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deqr.image.ImageLoader" title="Link to this definition">¶</a></dt>
 <dd><p>Load image data from common Python data containers.</p>
 <p>This is responsible for manipulating image data into a format that the QR
 decoders can understand. Images are converted to 8-bytes-per-pixel
 grayscale and ordered as a 1-dimensional row-major array of data.</p>
 <p>To avoid unnecessary hard dependencies on large external libraries, the
 source format of provided data is inferred by inspecting the object’s type
-description. Supported source formats include the <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.26)"><code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code></a>
+description. Supported source formats include the <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code></a>
 used by numpy and OpenCV, the <code class="xref py py-class docutils literal notranslate"><span class="pre">cv2.UMat</span></code> format from OpenCV (this is
-converted to a <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.26)"><code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code></a>), the <a class="reference external" href="https://pillow.readthedocs.io/en/stable/reference/Image.html#PIL.Image.Image" title="(in Pillow (PIL Fork) v10.1.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">PIL.Image.Image</span></code></a> format
+converted to a <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code></a>), the <a class="reference external" href="https://pillow.readthedocs.io/en/stable/reference/Image.html#PIL.Image.Image" title="(in Pillow (PIL Fork) v11.3.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">PIL.Image.Image</span></code></a> format
 used by Pillow, or, if all else fails, a
 <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple[bytes,</span> <span class="pre">tuple[int,</span> <span class="pre">int]]</span></code> containing a pre-converted bytes
 object and its associated width, height pair.</p>
@@ -550,26 +552,26 @@ object and its associated width, height pair.</p>
 <p class="admonition-title">Warning</p>
 <p>It is strongly discouraged to access any of the properties of this class
 after it has been created. <a class="reference internal" href="#deqr.image.ImageLoader.data" title="deqr.image.ImageLoader.data"><code class="xref py py-attr docutils literal notranslate"><span class="pre">ImageLoader.data</span></code></a> uses a different
-backing class depending on the source type (<a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.26)"><code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code></a> when
-coming from numpy or OpenCV, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytearray</span></code></a> otherwise) and the QR
+backing class depending on the source type (<a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)"><code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code></a> when
+coming from numpy or OpenCV, <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.13)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytearray</span></code></a> otherwise) and the QR
 code decoders may do in-place manipulation of the data (e.g. the
 binarization routine manipulates the data in place).</p>
 </div>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="deqr.image.ImageLoader.width">
-<span class="sig-name descname"><span class="pre">width</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></em><a class="headerlink" href="#deqr.image.ImageLoader.width" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">width</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></em><a class="headerlink" href="#deqr.image.ImageLoader.width" title="Link to this definition">¶</a></dt>
 <dd><p>The width, in pixels, of the image data stored in <a class="reference internal" href="#deqr.image.ImageLoader.data" title="deqr.image.ImageLoader.data"><code class="xref py py-attr docutils literal notranslate"><span class="pre">data</span></code></a></p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="deqr.image.ImageLoader.height">
-<span class="sig-name descname"><span class="pre">height</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><span class="pre">int</span></a></em><a class="headerlink" href="#deqr.image.ImageLoader.height" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">height</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></em><a class="headerlink" href="#deqr.image.ImageLoader.height" title="Link to this definition">¶</a></dt>
 <dd><p>The height, in pixels, of the image data stored in <a class="reference internal" href="#deqr.image.ImageLoader.data" title="deqr.image.ImageLoader.data"><code class="xref py py-attr docutils literal notranslate"><span class="pre">data</span></code></a></p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="deqr.image.ImageLoader.data">
-<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.12)"><span class="pre">bytearray</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v1.26)"><span class="pre">numpy.ndarray</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#deqr.image.ImageLoader.data" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytearray" title="(in Python v3.13)"><span class="pre">bytearray</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.3)"><span class="pre">numpy.ndarray</span></a></em><a class="headerlink" href="#deqr.image.ImageLoader.data" title="Link to this definition">¶</a></dt>
 <dd><p>The image binary data.</p>
 </dd></dl>
 
@@ -577,19 +579,19 @@ binarization routine manipulates the data in place).</p>
 
 </section>
 <section id="binarize">
-<h2>Binarize<a class="headerlink" href="#binarize" title="Permalink to this headline">#</a></h2>
+<h2>Binarize<a class="headerlink" href="#binarize" title="Link to this heading">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The binarization function is expected to be invoked by the decoder as
 appropriate and not normally directly by the user, so it only offers a
 low-level interface.</p>
 </div>
-<span class="target" id="module-deqr.binarize"></span><dl class="py function">
+<dl class="py function" id="module-deqr.binarize">
 <dt class="sig sig-object py" id="deqr.binarize.binarize">
-<span class="sig-prename descclassname"><span class="pre">deqr.binarize.</span></span><span class="sig-name descname"><span class="pre">binarize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">uint8[::1]</span> <span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bool</span> <span class="pre">invert</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">void</span></span></span><a class="headerlink" href="#deqr.binarize.binarize" title="Permalink to this definition">#</a></dt>
+<span class="sig-prename descclassname"><span class="pre">deqr.binarize.</span></span><span class="sig-name descname"><span class="pre">binarize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">uint8[::1]</span> <span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span> <span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bool</span> <span class="pre">invert</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">void</span></span></span><a class="headerlink" href="#deqr.binarize.binarize" title="Link to this definition">¶</a></dt>
 <dd><p>Binarize an image. Manipulation occurs in place, mutating the input data.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>image</strong> – a memoryview to the bytes of an image.
 For example, <a class="reference internal" href="#deqr.image.ImageLoader.data" title="deqr.image.ImageLoader.data"><code class="xref py py-attr docutils literal notranslate"><span class="pre">deqr.image.ImageLoader.data</span></code></a></p></li>
@@ -637,9 +639,7 @@ For example, <a class="reference internal" href="#deqr.image.ImageLoader.data" t
             
           </div>
           <div class="right-details">
-            <div class="icons">
-              
-            </div>
+            
           </div>
         </div>
         
@@ -659,19 +659,78 @@ For example, <a class="reference internal" href="#deqr.image.ImageLoader.data" t
             <ul>
 <li><a class="reference internal" href="#">API Reference</a><ul>
 <li><a class="reference internal" href="#decoders">Decoders</a><ul>
-<li><a class="reference internal" href="#qrdecdecoder">QRdecDecoder</a></li>
-<li><a class="reference internal" href="#quircdecoder">QuircDecoder</a></li>
+<li><a class="reference internal" href="#qrdecdecoder">QRdecDecoder</a><ul>
+<li><a class="reference internal" href="#deqr.QRdecDecoder"><code class="docutils literal notranslate"><span class="pre">QRdecDecoder</span></code></a><ul>
+<li><a class="reference internal" href="#deqr.QRdecDecoder.decode"><code class="docutils literal notranslate"><span class="pre">QRdecDecoder.decode()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#quircdecoder">QuircDecoder</a><ul>
+<li><a class="reference internal" href="#deqr.QuircDecoder"><code class="docutils literal notranslate"><span class="pre">QuircDecoder</span></code></a><ul>
+<li><a class="reference internal" href="#deqr.QuircDecoder.decode"><code class="docutils literal notranslate"><span class="pre">QuircDecoder.decode()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a class="reference internal" href="#data-types">Data Types</a><ul>
-<li><a class="reference internal" href="#qrcode">QRCode</a></li>
-<li><a class="reference internal" href="#qrcodedata">QRCodeData</a></li>
-<li><a class="reference internal" href="#qrdatatype">QRDataType</a></li>
-<li><a class="reference internal" href="#qrecclevel">QREccLevel</a></li>
+<li><a class="reference internal" href="#qrcode">QRCode</a><ul>
+<li><a class="reference internal" href="#deqr.datatypes.QRCode"><code class="docutils literal notranslate"><span class="pre">QRCode</span></code></a><ul>
+<li><a class="reference internal" href="#deqr.datatypes.QRCode.version"><code class="docutils literal notranslate"><span class="pre">QRCode.version</span></code></a></li>
+<li><a class="reference internal" href="#deqr.datatypes.QRCode.ecc_level"><code class="docutils literal notranslate"><span class="pre">QRCode.ecc_level</span></code></a></li>
+<li><a class="reference internal" href="#deqr.datatypes.QRCode.mask"><code class="docutils literal notranslate"><span class="pre">QRCode.mask</span></code></a></li>
+<li><a class="reference internal" href="#deqr.datatypes.QRCode.data_entries"><code class="docutils literal notranslate"><span class="pre">QRCode.data_entries</span></code></a></li>
+<li><a class="reference internal" href="#deqr.datatypes.QRCode.corners"><code class="docutils literal notranslate"><span class="pre">QRCode.corners</span></code></a></li>
+<li><a class="reference internal" href="#deqr.datatypes.QRCode.center"><code class="docutils literal notranslate"><span class="pre">QRCode.center</span></code></a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#module-deqr.image">Image Loader</a></li>
-<li><a class="reference internal" href="#binarize">Binarize</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#qrcodedata">QRCodeData</a><ul>
+<li><a class="reference internal" href="#deqr.datatypes.QRCodeData"><code class="docutils literal notranslate"><span class="pre">QRCodeData</span></code></a><ul>
+<li><a class="reference internal" href="#deqr.datatypes.QRCodeData.type"><code class="docutils literal notranslate"><span class="pre">QRCodeData.type</span></code></a></li>
+<li><a class="reference internal" href="#deqr.datatypes.QRCodeData.data"><code class="docutils literal notranslate"><span class="pre">QRCodeData.data</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#qrdatatype">QRDataType</a><ul>
+<li><a class="reference internal" href="#deqr.datatypes.QRDataType"><code class="docutils literal notranslate"><span class="pre">QRDataType</span></code></a><ul>
+<li><a class="reference internal" href="#deqr.datatypes.QRDataType.NUMERIC"><code class="docutils literal notranslate"><span class="pre">QRDataType.NUMERIC</span></code></a></li>
+<li><a class="reference internal" href="#deqr.datatypes.QRDataType.ALPHANUMERIC"><code class="docutils literal notranslate"><span class="pre">QRDataType.ALPHANUMERIC</span></code></a></li>
+<li><a class="reference internal" href="#deqr.datatypes.QRDataType.BYTE"><code class="docutils literal notranslate"><span class="pre">QRDataType.BYTE</span></code></a></li>
+<li><a class="reference internal" href="#deqr.datatypes.QRDataType.KANJI"><code class="docutils literal notranslate"><span class="pre">QRDataType.KANJI</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#qrecclevel">QREccLevel</a><ul>
+<li><a class="reference internal" href="#deqr.datatypes.QREccLevel"><code class="docutils literal notranslate"><span class="pre">QREccLevel</span></code></a><ul>
+<li><a class="reference internal" href="#deqr.datatypes.QREccLevel.M"><code class="docutils literal notranslate"><span class="pre">QREccLevel.M</span></code></a></li>
+<li><a class="reference internal" href="#deqr.datatypes.QREccLevel.L"><code class="docutils literal notranslate"><span class="pre">QREccLevel.L</span></code></a></li>
+<li><a class="reference internal" href="#deqr.datatypes.QREccLevel.H"><code class="docutils literal notranslate"><span class="pre">QREccLevel.H</span></code></a></li>
+<li><a class="reference internal" href="#deqr.datatypes.QREccLevel.Q"><code class="docutils literal notranslate"><span class="pre">QREccLevel.Q</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-deqr.image">Image Loader</a><ul>
+<li><a class="reference internal" href="#deqr.image.ImageLoader"><code class="docutils literal notranslate"><span class="pre">ImageLoader</span></code></a><ul>
+<li><a class="reference internal" href="#deqr.image.ImageLoader.width"><code class="docutils literal notranslate"><span class="pre">ImageLoader.width</span></code></a></li>
+<li><a class="reference internal" href="#deqr.image.ImageLoader.height"><code class="docutils literal notranslate"><span class="pre">ImageLoader.height</span></code></a></li>
+<li><a class="reference internal" href="#deqr.image.ImageLoader.data"><code class="docutils literal notranslate"><span class="pre">ImageLoader.data</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#binarize">Binarize</a><ul>
+<li><a class="reference internal" href="#deqr.binarize.binarize"><code class="docutils literal notranslate"><span class="pre">binarize()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -683,13 +742,12 @@ For example, <a class="reference internal" href="#deqr.image.ImageLoader.data" t
       
     </aside>
   </div>
-</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/scripts/furo.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/tabs.js"></script>
+</div><script src="_static/documentation_options.js?v=000c92bf"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/furo.js?v=4e2eecee"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/tabs.js?v=3ee01567"></script>
     </body>
 </html>

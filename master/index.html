@@ -1,17 +1,17 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" lang="en" data-content_root="./">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Getting Started" href="getting-started.html" />
 
-    <meta name="generator" content="sphinx-4.5.0, furo 2022.09.29"/>
+    <!-- Generated with Sphinx 7.4.7 and Furo 2024.04.27 -->
         <title>deqr</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=d81277517bee4d6b0349d71bb2661d4890b5617c" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=437aa6ec" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
     
     
 
@@ -114,6 +114,8 @@
   <div class="visually-hidden">Hide table of contents sidebar</div>
 </label>
 
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
 
 
 <div class="page">
@@ -151,7 +153,7 @@
   <span class="sidebar-brand-text">deqr</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
-  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
@@ -197,9 +199,9 @@
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
-        <article role="main">
+        <article role="main" id="furo-main-content">
           <section id="deqr-version">
-<h1>deqr 0.2.2<a class="headerlink" href="#deqr-version" title="Permalink to this headline">#</a></h1>
+<h1>deqr 0.2.2<a class="headerlink" href="#deqr-version" title="Link to this heading">¶</a></h1>
 <p>QR code decoding for fun and profit.</p>
 <div class="toctree-wrapper compound">
 <ul>
@@ -225,19 +227,78 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="api-reference.html">API Reference</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="api-reference.html#decoders">Decoders</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="api-reference.html#qrdecdecoder">QRdecDecoder</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api-reference.html#quircdecoder">QuircDecoder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-reference.html#qrdecdecoder">QRdecDecoder</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api-reference.html#deqr.QRdecDecoder"><code class="docutils literal notranslate"><span class="pre">QRdecDecoder</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="api-reference.html#deqr.QRdecDecoder.decode"><code class="docutils literal notranslate"><span class="pre">QRdecDecoder.decode()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api-reference.html#quircdecoder">QuircDecoder</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api-reference.html#deqr.QuircDecoder"><code class="docutils literal notranslate"><span class="pre">QuircDecoder</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="api-reference.html#deqr.QuircDecoder.decode"><code class="docutils literal notranslate"><span class="pre">QuircDecoder.decode()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="api-reference.html#data-types">Data Types</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="api-reference.html#qrcode">QRCode</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api-reference.html#qrcodedata">QRCodeData</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api-reference.html#qrdatatype">QRDataType</a></li>
-<li class="toctree-l3"><a class="reference internal" href="api-reference.html#qrecclevel">QREccLevel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="api-reference.html#qrcode">QRCode</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api-reference.html#deqr.datatypes.QRCode"><code class="docutils literal notranslate"><span class="pre">QRCode</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="api-reference.html#deqr.datatypes.QRCode.version"><code class="docutils literal notranslate"><span class="pre">QRCode.version</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="api-reference.html#deqr.datatypes.QRCode.ecc_level"><code class="docutils literal notranslate"><span class="pre">QRCode.ecc_level</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="api-reference.html#deqr.datatypes.QRCode.mask"><code class="docutils literal notranslate"><span class="pre">QRCode.mask</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="api-reference.html#deqr.datatypes.QRCode.data_entries"><code class="docutils literal notranslate"><span class="pre">QRCode.data_entries</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="api-reference.html#deqr.datatypes.QRCode.corners"><code class="docutils literal notranslate"><span class="pre">QRCode.corners</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="api-reference.html#deqr.datatypes.QRCode.center"><code class="docutils literal notranslate"><span class="pre">QRCode.center</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="api-reference.html#module-deqr.image">Image Loader</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api-reference.html#binarize">Binarize</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api-reference.html#qrcodedata">QRCodeData</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api-reference.html#deqr.datatypes.QRCodeData"><code class="docutils literal notranslate"><span class="pre">QRCodeData</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="api-reference.html#deqr.datatypes.QRCodeData.type"><code class="docutils literal notranslate"><span class="pre">QRCodeData.type</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="api-reference.html#deqr.datatypes.QRCodeData.data"><code class="docutils literal notranslate"><span class="pre">QRCodeData.data</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api-reference.html#qrdatatype">QRDataType</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api-reference.html#deqr.datatypes.QRDataType"><code class="docutils literal notranslate"><span class="pre">QRDataType</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="api-reference.html#deqr.datatypes.QRDataType.NUMERIC"><code class="docutils literal notranslate"><span class="pre">QRDataType.NUMERIC</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="api-reference.html#deqr.datatypes.QRDataType.ALPHANUMERIC"><code class="docutils literal notranslate"><span class="pre">QRDataType.ALPHANUMERIC</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="api-reference.html#deqr.datatypes.QRDataType.BYTE"><code class="docutils literal notranslate"><span class="pre">QRDataType.BYTE</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="api-reference.html#deqr.datatypes.QRDataType.KANJI"><code class="docutils literal notranslate"><span class="pre">QRDataType.KANJI</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="api-reference.html#qrecclevel">QREccLevel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api-reference.html#deqr.datatypes.QREccLevel"><code class="docutils literal notranslate"><span class="pre">QREccLevel</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="api-reference.html#deqr.datatypes.QREccLevel.M"><code class="docutils literal notranslate"><span class="pre">QREccLevel.M</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="api-reference.html#deqr.datatypes.QREccLevel.L"><code class="docutils literal notranslate"><span class="pre">QREccLevel.L</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="api-reference.html#deqr.datatypes.QREccLevel.H"><code class="docutils literal notranslate"><span class="pre">QREccLevel.H</span></code></a></li>
+<li class="toctree-l5"><a class="reference internal" href="api-reference.html#deqr.datatypes.QREccLevel.Q"><code class="docutils literal notranslate"><span class="pre">QREccLevel.Q</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api-reference.html#module-deqr.image">Image Loader</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api-reference.html#deqr.image.ImageLoader"><code class="docutils literal notranslate"><span class="pre">ImageLoader</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="api-reference.html#deqr.image.ImageLoader.width"><code class="docutils literal notranslate"><span class="pre">ImageLoader.width</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api-reference.html#deqr.image.ImageLoader.height"><code class="docutils literal notranslate"><span class="pre">ImageLoader.height</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="api-reference.html#deqr.image.ImageLoader.data"><code class="docutils literal notranslate"><span class="pre">ImageLoader.data</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api-reference.html#binarize">Binarize</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api-reference.html#deqr.binarize.binarize"><code class="docutils literal notranslate"><span class="pre">binarize()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -269,9 +330,7 @@
             
           </div>
           <div class="right-details">
-            <div class="icons">
-              
-            </div>
+            
           </div>
         </div>
         
@@ -301,13 +360,12 @@
       
     </aside>
   </div>
-</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/scripts/furo.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/tabs.js"></script>
+</div><script src="_static/documentation_options.js?v=000c92bf"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/furo.js?v=4e2eecee"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/tabs.js?v=3ee01567"></script>
     </body>
 </html>

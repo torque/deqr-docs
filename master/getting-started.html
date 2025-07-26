@@ -1,17 +1,17 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" lang="en" data-content_root="./">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Decoders" href="decoders.html" /><link rel="prev" title="deqr 0.2.2" href="index.html" />
 
-    <meta name="generator" content="sphinx-4.5.0, furo 2022.09.29"/>
+    <!-- Generated with Sphinx 7.4.7 and Furo 2024.04.27 -->
         <title>Getting Started - deqr</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=d81277517bee4d6b0349d71bb2661d4890b5617c" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=437aa6ec" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=4c969af8" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
     
     
 
@@ -114,6 +114,8 @@
   <div class="visually-hidden">Hide table of contents sidebar</div>
 </label>
 
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
 
 
 <div class="page">
@@ -151,7 +153,7 @@
   <span class="sidebar-brand-text">deqr</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
-  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
@@ -197,13 +199,13 @@
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
-        <article role="main">
+        <article role="main" id="furo-main-content">
           <section id="getting-started">
-<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">#</a></h1>
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">¶</a></h1>
 <p>If you already have an image containing a QR code that you’d like to decode, the
 process is pretty straightforward.</p>
 <section id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">#</a></h2>
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">deqr</span></code> is published on PyPi with pre-built binaries for common platforms and
 modern Python versions. It can be installed with <code class="docutils literal notranslate"><span class="pre">pip</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">deqr</span>
@@ -211,9 +213,9 @@ modern Python versions. It can be installed with <code class="docutils literal n
 </div>
 </section>
 <section id="a-basic-exmaple">
-<h2>A Basic Exmaple<a class="headerlink" href="#a-basic-exmaple" title="Permalink to this headline">#</a></h2>
+<h2>A Basic Exmaple<a class="headerlink" href="#a-basic-exmaple" title="Link to this heading">¶</a></h2>
 <section id="decoding-from-an-image">
-<h3>Decoding From an Image<a class="headerlink" href="#decoding-from-an-image" title="Permalink to this headline">#</a></h3>
+<h3>Decoding From an Image<a class="headerlink" href="#decoding-from-an-image" title="Link to this heading">¶</a></h3>
 <p>The easiest way to decode QR codes from an image file is to use the external
 <a class="reference external" href="https://github.com/opencv/opencv">OpenCV</a> or <a class="reference external" href="https://github.com/python-pillow/Pillow">Pillow</a> libraries. These libraries are not shipped as dependencies
 of <code class="docutils literal notranslate"><span class="pre">deqr</span></code>, so you have to manually install whichever one you want to use.</p>
@@ -228,9 +230,9 @@ alphanumeric, byte, and kanji.</p>
 <input checked="True" class="tab-input" id="tab-set--2-input--1" name="tab-set--2" type="radio"><label class="tab-label" for="tab-set--2-input--1">OpenCV</label><div class="tab-content docutils container">
 <div class="tab-set docutils container">
 <input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">QRdec</label><div class="tab-content docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cv2</span>
-<span class="kn">import</span> <span class="nn">numpy</span>
-<span class="kn">import</span> <span class="nn">deqr</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">deqr</span>
 
 <span class="n">image_data</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s2">&quot;amalgam.png&quot;</span><span class="p">)</span>
 
@@ -241,9 +243,9 @@ alphanumeric, byte, and kanji.</p>
 </div>
 </div>
 <input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Quirc</label><div class="tab-content docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cv2</span>
-<span class="kn">import</span> <span class="nn">numpy</span>
-<span class="kn">import</span> <span class="nn">deqr</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">deqr</span>
 
 <span class="n">image_data</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s2">&quot;amalgam.png&quot;</span><span class="p">)</span>
 
@@ -258,8 +260,8 @@ alphanumeric, byte, and kanji.</p>
 <input class="tab-input" id="tab-set--2-input--2" name="tab-set--2" type="radio"><label class="tab-label" for="tab-set--2-input--2">Pillow</label><div class="tab-content docutils container">
 <div class="tab-set docutils container">
 <input checked="True" class="tab-input" id="tab-set--1-input--1" name="tab-set--1" type="radio"><label class="tab-label" for="tab-set--1-input--1">QRdec</label><div class="tab-content docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">PIL.Image</span><span class="o">,</span> <span class="nn">PIL.ImageDraw</span><span class="o">,</span> <span class="nn">PIL.ImageFont</span>
-<span class="kn">import</span> <span class="nn">deqr</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">PIL.Image</span><span class="o">,</span><span class="w"> </span><span class="nn">PIL.ImageDraw</span><span class="o">,</span><span class="w"> </span><span class="nn">PIL.ImageFont</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">deqr</span>
 
 <span class="n">image_data</span> <span class="o">=</span> <span class="n">PIL</span><span class="o">.</span><span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;amalgam.png&quot;</span><span class="p">)</span>
 
@@ -270,8 +272,8 @@ alphanumeric, byte, and kanji.</p>
 </div>
 </div>
 <input class="tab-input" id="tab-set--1-input--2" name="tab-set--1" type="radio"><label class="tab-label" for="tab-set--1-input--2">Quirc</label><div class="tab-content docutils container">
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">PIL.Image</span><span class="o">,</span> <span class="nn">PIL.ImageDraw</span><span class="o">,</span> <span class="nn">PIL.ImageFont</span>
-<span class="kn">import</span> <span class="nn">deqr</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">PIL.Image</span><span class="o">,</span><span class="w"> </span><span class="nn">PIL.ImageDraw</span><span class="o">,</span><span class="w"> </span><span class="nn">PIL.ImageFont</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">deqr</span>
 
 <span class="n">image_data</span> <span class="o">=</span> <span class="n">PIL</span><span class="o">.</span><span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;amalgam.png&quot;</span><span class="p">)</span>
 
@@ -344,7 +346,7 @@ varies slightly between the decoders):</p>
 </div>
 </section>
 <section id="visualizing-the-results">
-<h3>Visualizing the Results<a class="headerlink" href="#visualizing-the-results" title="Permalink to this headline">#</a></h3>
+<h3>Visualizing the Results<a class="headerlink" href="#visualizing-the-results" title="Link to this heading">¶</a></h3>
 <p>When trying to understand what the decoder is finding, it can be helpful to
 annotate the source image using the information returned by the decoder. Here,
 we show off the information we just decoded.</p>
@@ -353,7 +355,7 @@ we show off the information we just decoded.</p>
 <p>If your source image is encoded as grayscale, you will not be able to draw
 colored annotations on it without first converting it into a colorspace
 with color channels. See the documentation of the annotation tool you are
-using (e.g. <a class="reference external" href="https://pillow.readthedocs.io/en/stable/reference/Image.html#PIL.Image.Image.convert" title="(in Pillow (PIL Fork) v10.1.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">PIL.Image.Image.convert()</span></code></a>) for instruction on how to
+using (e.g. <a class="reference external" href="https://pillow.readthedocs.io/en/stable/reference/Image.html#PIL.Image.Image.convert" title="(in Pillow (PIL Fork) v11.3.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">PIL.Image.Image.convert()</span></code></a>) for instruction on how to
 accomplish that.</p>
 </div>
 <div class="tab-set docutils container">
@@ -363,7 +365,7 @@ accomplish that.</p>
 <figure class="align-center">
 <img alt="/deqr-docs/images/amalgam-annotated-opencv-qrdec.png" src="/deqr-docs/images/amalgam-annotated-opencv-qrdec.png" />
 </figure>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">draw_text</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">text</span><span class="p">,</span> <span class="n">location</span><span class="p">,</span> <span class="n">alignment</span><span class="p">):</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">draw_text</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">text</span><span class="p">,</span> <span class="n">location</span><span class="p">,</span> <span class="n">alignment</span><span class="p">):</span>
     <span class="n">font_face</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">FONT_HERSHEY_SIMPLEX</span>
     <span class="n">font_scale</span> <span class="o">=</span> <span class="mf">0.4</span>
     <span class="n">font_thickness</span> <span class="o">=</span> <span class="mi">1</span>
@@ -436,7 +438,7 @@ accomplish that.</p>
 <figure class="align-center">
 <img alt="/deqr-docs/images/amalgam-annotated-opencv-quirc.png" src="/deqr-docs/images/amalgam-annotated-opencv-quirc.png" />
 </figure>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">draw_text</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">text</span><span class="p">,</span> <span class="n">location</span><span class="p">,</span> <span class="n">alignment</span><span class="p">):</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">draw_text</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">text</span><span class="p">,</span> <span class="n">location</span><span class="p">,</span> <span class="n">alignment</span><span class="p">):</span>
     <span class="n">font_face</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">FONT_HERSHEY_SIMPLEX</span>
     <span class="n">font_scale</span> <span class="o">=</span> <span class="mf">0.4</span>
     <span class="n">font_thickness</span> <span class="o">=</span> <span class="mi">1</span>
@@ -516,7 +518,7 @@ accomplish that.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">drawer</span> <span class="o">=</span> <span class="n">PIL</span><span class="o">.</span><span class="n">ImageDraw</span><span class="o">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">image_data</span><span class="p">)</span>
 
 
-<span class="k">def</span> <span class="nf">translate</span><span class="p">(</span><span class="n">point</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">translate</span><span class="p">(</span><span class="n">point</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">y</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">y</span> <span class="o">=</span> <span class="n">x</span>
     <span class="k">return</span> <span class="p">(</span><span class="n">point</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">x</span><span class="p">,</span> <span class="n">point</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span>
@@ -570,7 +572,7 @@ accomplish that.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">drawer</span> <span class="o">=</span> <span class="n">PIL</span><span class="o">.</span><span class="n">ImageDraw</span><span class="o">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">image_data</span><span class="p">)</span>
 
 
-<span class="k">def</span> <span class="nf">translate</span><span class="p">(</span><span class="n">point</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">translate</span><span class="p">(</span><span class="n">point</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">y</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">y</span> <span class="o">=</span> <span class="n">x</span>
     <span class="k">return</span> <span class="p">(</span><span class="n">point</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">x</span><span class="p">,</span> <span class="n">point</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span>
@@ -623,7 +625,7 @@ accomplish that.</p>
 </section>
 </section>
 <section id="practical-usage">
-<h2>Practical Usage<a class="headerlink" href="#practical-usage" title="Permalink to this headline">#</a></h2>
+<h2>Practical Usage<a class="headerlink" href="#practical-usage" title="Link to this heading">¶</a></h2>
 <p>QR codes were invented primarily to facilitate the process of transferring
 information from real, physical objects into a computer system. As such, images
 containing QR codes frequently have artifacts such as noise, blur, lens
@@ -633,7 +635,7 @@ decoding.</p>
 <p><code class="docutils literal notranslate"><span class="pre">deqr</span></code> ships with defaults that should perform reasonably well in real-world
 scenarios.</p>
 <section id="binarization">
-<h3>Binarization<a class="headerlink" href="#binarization" title="Permalink to this headline">#</a></h3>
+<h3>Binarization<a class="headerlink" href="#binarization" title="Link to this heading">¶</a></h3>
 <p>Binarization is the process of converting all pixels in an image to either
 completely white or completely black. Because the value of a QR code “bit” is
 dependent on whether it is light or dark, this process makes a dramatic
@@ -643,7 +645,7 @@ by comparing each pixel to a group of its neighbors. This approach compensates
 for images that have poor or somewhat uneven lighting.</p>
 </section>
 <section id="demonstration">
-<h3>Demonstration<a class="headerlink" href="#demonstration" title="Permalink to this headline">#</a></h3>
+<h3>Demonstration<a class="headerlink" href="#demonstration" title="Link to this heading">¶</a></h3>
 <p>Below are two examples of successfully decoded images. The first shows the
 binarization dealing with poor lighting, and the second shows a somewhat blurry
 image featuring some minor lens distortion. The outputs were generated using
@@ -655,11 +657,6 @@ than the image orientation.</p>
 <p>The inverted reflectance required by QRdec is also shown in the output.</p>
 <div class="table-wrapper docutils container">
 <table class="docutils align-center">
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Source</p></th>
 <th class="head"><p>QRdec</p></th>
@@ -686,13 +683,13 @@ than the image orientation.</p>
 </div>
 </section>
 <section id="accessing-intermediates">
-<h3>Accessing Intermediates<a class="headerlink" href="#accessing-intermediates" title="Permalink to this headline">#</a></h3>
+<h3>Accessing Intermediates<a class="headerlink" href="#accessing-intermediates" title="Link to this heading">¶</a></h3>
 <p>While not particularly recommended, here’s an example of accessing the
 intermediate binarization image by (ab)using the fact that it is an in-place
 mutation and that <a class="reference internal" href="api-reference.html#deqr.image.ImageLoader" title="deqr.image.ImageLoader"><code class="xref py py-class docutils literal notranslate"><span class="pre">deqr.image.ImageLoader</span></code></a> is passed through the decode
 process without being copied.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">cv2</span><span class="o">,</span> <span class="nn">numpy</span>
-<span class="kn">import</span> <span class="nn">deqr</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span><span class="o">,</span><span class="w"> </span><span class="nn">numpy</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">deqr</span>
 
 <span class="n">image_data</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s2">&quot;dark.jpg&quot;</span><span class="p">)</span>
 <span class="n">img</span> <span class="o">=</span> <span class="n">deqr</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">ImageLoader</span><span class="p">(</span><span class="n">image_data</span><span class="p">)</span>
@@ -741,9 +738,7 @@ process without being copied.</p>
             
           </div>
           <div class="right-details">
-            <div class="icons">
-              
-            </div>
+            
           </div>
         </div>
         
@@ -785,13 +780,12 @@ process without being copied.</p>
       
     </aside>
   </div>
-</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/scripts/furo.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/tabs.js"></script>
+</div><script src="_static/documentation_options.js?v=000c92bf"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/furo.js?v=4e2eecee"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/tabs.js?v=3ee01567"></script>
     </body>
 </html>
